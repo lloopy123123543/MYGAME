@@ -6,7 +6,7 @@ let cube = {
     width: 56,
     height: 56,
     step: 50,
-    transition1:.25
+    transition:.25
 }
 
 function checkButton(event) {
@@ -40,7 +40,15 @@ function renderCube(cube) {
     document.getElementById('cube').style.left = cube.x + 'px';
     document.getElementById('cube').style.width = cube.width + 'px';
     document.getElementById('cube').style.height = cube.height + 'px';
-    document.getElementById('cube').style.transition = 'ease' + cube.transition1 + 's';
+    document.getElementById('cube').style.transition = 'ease' + cube.transition + 's';
+}
+let table = {
+  tablex=100,
+  tabley=20,
+}
+if(cube.x == tablex && cube.y == tabley){
+  console.log('pizda')
+
 }
 
 renderCube(cube);
