@@ -19,14 +19,14 @@ function checkButton(event) {
 
     if (event.keyCode === 39) {
         console.log("ArrowRight");
-        if ((cube.x < map.width) < map.width) {
+        if (cube.x < 950%map.width) {
             cube.x += cube.step;
         }
     }
 
     if (event.keyCode === 40) {
         console.log("ArrowDown");
-        if (cube.y < map.height) {
+        if (cube.y < 950%map.height) {
             cube.y += cube.step;
         }
     }
@@ -49,4 +49,3 @@ function renderMap(map){
     document.getElementById('map').style.height = map.height + 'px';
     document.getElementById('map').style.backgroundColor = map.color;
 }
-

@@ -2,10 +2,10 @@ let cube = {
     id: 'cube',
     x: 0,
     y: 0,
-    width: 56,
-    height: 56,
+    width: 50,
+    height: 50,
     trnstn: .25,
-    step: 56,
+    step: 50,
     color: 'black'
 }
 
