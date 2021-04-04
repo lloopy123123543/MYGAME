@@ -19,14 +19,16 @@ function checkButton(event) {
 
     if (event.keyCode === 39) {
         console.log("ArrowRight");
-        if (cube.x < 950%map.width) {
+        if (cube.x < (map.width-cube.width)) {
+
             cube.x += cube.step;
+
         }
     }
 
     if (event.keyCode === 40) {
         console.log("ArrowDown");
-        if (cube.y < 950%map.height) {
+        if (cube.y < (map.height-cube.height)) {
             cube.y += cube.step;
         }
     }
